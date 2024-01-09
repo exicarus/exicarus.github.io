@@ -3,6 +3,23 @@
 
 @import "bootstrap-5.3.2/scss/bootstrap.scss";
 
-body {
-    background: url("/assets/images/confetti.svg");
+@font-face {
+	font-family: "Mija";
+	src: url("/assets/font/Mija W03 Regular.ttf");
 }
+
+body {
+    background: url("/assets/img/confetti.svg");
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    font-family: "Mija";
+    font-weight: bold;
+    font-size: x-large;
+}
+

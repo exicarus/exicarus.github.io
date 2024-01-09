@@ -12,8 +12,8 @@ layout: default
                         <a href="{{ post.url }}" alt="{{ mod }}">
                             <div class="card" style="width: 18rem;">
                                 <img class="card-img-top" src="{{ post.image }}" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ post.title }}</h5>
+                                <div class="card-body text-center">
+                                    <div class="card-title">{{ post.title }}</div>
                                 </div>
                             </div>
                         </a>
