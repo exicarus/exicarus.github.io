@@ -5,19 +5,19 @@
 layout: default
 ---
 
-<div class="container-md">
-    <div class="row align-items-center">
-    {% for post in site.posts %}
-                <div class="col-md-4"> 
-                    <a href="{{ post.url }}">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="{{ post.image }}" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ post.title }}</h5>
+<div class="container">
+        <div class="row gy-5">
+        {% for post in site.posts %}
+                    <div class="col-sm-4"> 
+                        <a href="{{ post.url }}" alt="{{ mod }}">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="{{ post.image }}" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ post.title }}</h5>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-    {% endfor %}
-    </div>
+                        </a>
+                    </div>
+        {% endfor %}
+        </div>
 </div>
