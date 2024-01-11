@@ -6,18 +6,18 @@ layout: default
 ---
 
 <div class="container">
-        <div class="row gy-5">
+    <div class="row gy-5">
         {% for post in site.posts %}
-                    <div class="col-sm-4"> 
-                        <a href="{{ post.url }}" alt="{{ mod }}">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="{{ post.image }}" alt="Card image cap">
-                                <div class="card-body text-center">
-                                    <div class="card-title">{{ post.title }}</div>
-                                </div>
-                            </div>
-                        </a>
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <a href="{{ post.url }}" alt="{{ mod }}">
+                    <img class="card-img-top" src="{{ post.image }}" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <div class="card-title">{{ post.title }}</div>
                     </div>
-        {% endfor %}
+                </a>
+            </div>
         </div>
+        {% endfor %}
+    </div>
 </div>
