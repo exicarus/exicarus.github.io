@@ -6,12 +6,12 @@ layout: default
 ---
 
 <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row gy-5">
         {% for post in site.posts %}
-                    <div class="col"> 
+                    <div class="col-sm-4"> 
                         <a href="{{ post.url }}" alt="{{ mod }}">
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}">
+                                <img class="card-img-top" src="{{ post.image }}" alt="Card image cap">
                                 <div class="card-body text-center">
                                     <div class="card-title">{{ post.title }}</div>
                                 </div>
@@ -19,5 +19,5 @@ layout: default
                         </a>
                     </div>
         {% endfor %}
-        </div>
+    </div>
 </div>
