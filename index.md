@@ -24,7 +24,7 @@ layout: default
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <img class="card-img-top" src="" alt="{{ post.title }}">
+                <img class="card-img-top" src="" alt="">
                 <div class="card-body text-center">
                     <div class="card-title"></div>
                 </div>
@@ -40,6 +40,7 @@ layout: default
     var image = button.data('image');
     var modal = $(this)
     modal.find('.card-img-top').attr('src', image);
+    modal.find('.card-img-top').attr('alt', title);
     modal.find('.card-title').html(title);
 
     });
