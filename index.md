@@ -9,9 +9,9 @@ layout: default
     <div class="row gy-5">
         {% for post in site.posts %}
                     <div class="col-sm-4"> 
-                        <a href="{{ post.url }}" alt="{{ mod }}">
+                        <a data-toggle="modal" data-target="#exampleModal" data-title="{{ post.title }}" data-image="{{ post.image }}" alt="{{ post.title }}">
                             <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="{{ post.image }}" alt="Card image cap">
+                                <img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}">
                                 <div class="card-body text-center">
                                     <div class="card-title">{{ post.title }}</div>
                                 </div>
@@ -20,4 +20,27 @@ layout: default
                     </div>
         {% endfor %}
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="card-img-top" src="" alt="{{ post.title }}">
+                <div class="card-body text-center">
+                    <div class="card-title"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+</div>
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) 
+    var title = button.data('title');
+    var image = button.data('image');
+    var modal = $(this)
+    modal.find('.card-img-top').attr('src', image);
+    modal.find('.card-title').html(title);
+
+    });
+</script>
