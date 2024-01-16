@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 ---
 
@@ -42,6 +39,5 @@ layout: default
     modal.find('.card-img-top').attr('src', image);
     modal.find('.card-img-top').attr('alt', title);
     modal.find('.card-title').html(title);
-
     });
 </script>
