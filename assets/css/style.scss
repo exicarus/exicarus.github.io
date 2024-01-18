@@ -21,9 +21,14 @@ body {
     font-family: "Mija";
     font-weight: bold;
     font-size: x-large;
+    border: none;
 }
 
 .card-flag {
     height: 50px;
     width: 50px;
+}
+
+.list-group-item {
+    border: none;
 }
