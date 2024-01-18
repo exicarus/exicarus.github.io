@@ -45,12 +45,10 @@ layout: default
                     <div class="col-sm-6">
                         <div class="card">
                               <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><img src="/assets/img/uk.png" class="rounded-circle mt-3 mx-auto img-thumbnail card-flag"/><span id="en"></span></li>
-                                <li class="list-group-item"><img src="/assets/img/fr.png" class="rounded-circle mt-3 mx-auto img-thumbnail card-flag"/><span id="fr"></span></li>
-                                <li class="list-group-item"><img src="/assets/img/vn.png" class="rounded-circle mt-3 mx-auto img-thumbnail card-flag"/><span id="vn"></span></li>
+                                <li class="list-group-item"><img src="/assets/img/uk.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="en"></span></li>
+                                <li class="list-group-item"><img src="/assets/img/fr.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="fr"></span></li>
+                                <li class="list-group-item"><img src="/assets/img/vn.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="vn"></span></li>
                             </ul>
-                            <!-- <img src="/assets/img/fr.png" class="rounded-circle mt-3 mx-auto img-thumbnail card-flag"/>
-                            <div id="fr"></div> -->
                         </div>
                     </div>
                 </div>
