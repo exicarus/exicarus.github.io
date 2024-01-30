@@ -35,20 +35,20 @@ layout: default
                     </div>
                     <div class="col-sm-6">
                         <div class="card">
-                            <div class="card-body">
-                                <div class="card-body text-center">
-                                   <img src="/assets/img/volume-up-fill.svg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card">
                               <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><img src="/assets/img/uk.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="en"></span></li>
                                 <li class="list-group-item"><img src="/assets/img/fr.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="fr"></span></li>
                                 <li class="list-group-item"><img src="/assets/img/vn.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="vn"></span></li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-body text-center">
+                                   <img src="/assets/img/volume-up-fill.svg" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
