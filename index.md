@@ -11,7 +11,7 @@ layout: default
                             <div class="card card-list">
                                 <img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}">
                                 <div class="card-body text-center">
-                                    <div class="card-title">{{ post.title }}</div>
+                                    <div class="card-title">{{ post.french }}</div>
                                 </div>
                             </div>
                         </a>
@@ -33,22 +33,13 @@ layout: default
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-12">
                         <div class="card">
                               <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><img src="/assets/img/uk.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="en"></span></li>
                                 <li class="list-group-item"><img src="/assets/img/fr.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="fr"></span></li>
                                 <li class="list-group-item"><img src="/assets/img/vn.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="vn"></span></li>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="card-body text-center">
-                                   <img src="/assets/img/volume-up-fill.svg" />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,7 +58,7 @@ layout: default
     var modal = $(this)
     modal.find('.card-img-top').attr('src', image);
     modal.find('.card-img-top').attr('alt', title);
-    modal.find('.card-title').html(title);
+    modal.find('.card-title').html(french);
     modal.find('#en').html(english);
     modal.find('#fr').html(french);
     modal.find('#vn').html(vietnamese);
