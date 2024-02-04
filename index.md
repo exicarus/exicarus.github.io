@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="container">
-    <div class="row gy-5">
+    <div class="row gy-5 d-print-none">
         {% for post in site.posts %}
                     <div class="col-sm-4"> 
                         <a data-toggle="modal" data-target="#cardModal" data-title="{{ post.title }}" data-image="{{ post.image }}"
@@ -33,13 +33,22 @@ layout: default
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <div class="card">
+                    <div class="col-sm-6">
+                        <div class="card d-print-none">
                               <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><img src="/assets/img/uk.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="en"></span></li>
                                 <li class="list-group-item"><img src="/assets/img/fr.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="fr"></span></li>
                                 <li class="list-group-item"><img src="/assets/img/vn.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="vn"></span></li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card d-print-none">
+                            <div class="card-body">
+                                <div class="card-body text-center">
+                                   <img src="/assets/img/printer.png" id="printer" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,4 +72,10 @@ layout: default
     modal.find('#fr').html(french);
     modal.find('#vn').html(vietnamese);
     });
+
+    $('#printer').on('click', function (event) {
+        window.print();
+    });
+
+
 </script>
