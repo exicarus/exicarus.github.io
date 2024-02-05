@@ -24,17 +24,17 @@ layout: default
             <div class="modal-body">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="card">
-                            <div class="card-body" id="img-modal">
+                        <div class="card" id="img-modal">
+                            <div class="card-body">
                                 <img class="card-img-top" src="" alt=""  />
-                                <div class="card-body text-center">
-                                    <div class="card-title"></div>
+                                <div class="card-body text-center d-print-none">
+                                    <div class="card-title "></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="card d-print-none">
+                        <div class="card" id="label-modal">
                               <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><img src="/assets/img/uk.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="en"></span></li>
                                 <li class="list-group-item"><img src="/assets/img/fr.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="fr"></span></li>
