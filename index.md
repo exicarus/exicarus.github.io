@@ -9,7 +9,7 @@ layout: default
                         <a data-toggle="modal" data-target="#cardModal" data-title="{{ post.title }}" data-image="{{ post.image }}"
                         data-french="{{ post.french }}" data-english="{{ post.english }}" data-vietnamese="{{ post.vietnamese }}" alt="{{ post.title }}">
                             <div class="card card-list">
-                                <img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}">
+                                <img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}" />
                                 <div class="card-body text-center">
                                     <div class="card-title">{{ post.french }}</div>
                                 </div>
@@ -25,8 +25,8 @@ layout: default
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="card">
-                            <div class="card-body">
-                                <img class="card-img-top" src="" alt="">
+                            <div class="card-body" id="img-modal">
+                                <img class="card-img-top" src="" alt=""  />
                                 <div class="card-body text-center">
                                     <div class="card-title"></div>
                                 </div>
@@ -58,19 +58,19 @@ layout: default
 </div>
 <script>
     $('#cardModal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget);
-    var title = button.data('title');
-    var image = button.data('image');
-    var english = button.data('english');
-    var french = button.data('french');
-    var vietnamese = button.data('vietnamese');
-    var modal = $(this)
-    modal.find('.card-img-top').attr('src', image);
-    modal.find('.card-img-top').attr('alt', title);
-    modal.find('.card-title').html(french);
-    modal.find('#en').html(english);
-    modal.find('#fr').html(french);
-    modal.find('#vn').html(vietnamese);
+        var button = $(event.relatedTarget);
+        var title = button.data('title');
+        var image = button.data('image');
+        var english = button.data('english');
+        var french = button.data('french');
+        var vietnamese = button.data('vietnamese');
+        var modal = $(this)
+        modal.find('.card-img-top').attr('src', image);
+        modal.find('.card-img-top').attr('alt', title);
+        modal.find('.card-title').html(french);
+        modal.find('#en').html(english);
+        modal.find('#fr').html(french);
+        modal.find('#vn').html(vietnamese);
     });
 
     $('#printer').on('click', function (event) {

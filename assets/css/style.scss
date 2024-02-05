@@ -32,3 +32,17 @@ body {
 .list-group-item {
     border: none;
 }
+
+
+@media print {
+    #img-modal {
+        height: 148mm;
+        width: 105mm;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        border: 1px solid;
+    }
+}
