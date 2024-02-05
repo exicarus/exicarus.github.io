@@ -33,6 +33,9 @@ body {
     border: none;
 }
 
+.modal-content {
+    border: none;
+}
 
 @media print {
     #img-modal {
@@ -51,7 +54,7 @@ body {
         width: 105mm;
         position: fixed;
         top: 0;
-        left: 107mm;
+        left: 120mm;
         margin: 0;
         padding: 0;
         border: 1px solid;
