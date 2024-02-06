@@ -36,9 +36,9 @@ layout: default
                     <div class="col-sm-6">
                         <div class="card" id="label-modal">
                               <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><img src="/assets/img/uk.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="en"></span></li>
-                                <li class="list-group-item"><img src="/assets/img/fr.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="fr"></span></li>
-                                <li class="list-group-item"><img src="/assets/img/vn.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="vn"></span></li>
+                                <li class="list-group-item"><img src="/assets/flags/uk.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="en"></span></li>
+                                <li class="list-group-item"><img src="/assets/flags/fr.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="fr"></span></li>
+                                <li class="list-group-item"><img src="/assets/flags/vn.png" class="rounded-circle mx-auto card-flag"/>&nbsp;<span class="align-middle" id="vn"></span></li>
                             </ul>
                         </div>
                     </div>
