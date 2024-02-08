@@ -9,12 +9,18 @@
 }
 
 body {
-    background: url("/assets/img/confetti.svg");
+    background: url("/assets/menu/confetti.svg");
 }
 
+
+body.tiles {
+    background: url("/assets/menu/confetti_orange.svg");
+}
+
+
 .nav-menu-img {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
 }
 
 .card-list:hover {

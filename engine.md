@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: engine
 ---
 
 {% assign engine_posts = site.posts | where_exp: "item", "item.category contains 'engine'" %}
