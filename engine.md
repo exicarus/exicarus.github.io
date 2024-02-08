@@ -2,11 +2,11 @@
 layout: default
 ---
 
-{% assign animals_posts = site.posts | where_exp: "item", "item.category contains 'animal'" %}
+{% assign engine_posts = site.posts | where_exp: "item", "item.category contains 'engine'" %}
 
 <div class="container">
     <div class="row gy-5 d-print-none">
-        {% for post in animals_posts %}
+        {% for post in engine_posts %}
                     <div class="col-sm-4"> 
                         <a data-toggle="modal" data-target="#cardModal" data-title="{{ post.title }}" data-image="{{ post.image }}"
                         data-french="{{ post.french }}" data-english="{{ post.english }}" data-vietnamese="{{ post.vietnamese }}" alt="{{ post.title }}">
