@@ -17,6 +17,11 @@ body.tiles {
     background: url("/assets/menu/confetti_orange.svg");
 }
 
+body.princess {
+    background: url("/assets/menu/confetti_pink.svg");
+}
+
+
 
 .nav-menu-img {
     width: 48px;
@@ -30,7 +35,6 @@ body.tiles {
 .card {
     text-decoration: none;
     font-family: "Baloo";
-    // font-weight: bold;
     font-size: x-large;
     border: none;
 }
