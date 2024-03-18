@@ -4,8 +4,8 @@
 @import "bootstrap-5.3.2/scss/bootstrap.scss";
 
 @font-face {
-	font-family: "Baloo";
-	src: url("/assets/font/Baloo-Regular.ttf");
+    font-family: "Baloo";
+    src: url("/assets/font/Baloo-Regular.ttf");
 }
 
 body {
@@ -34,6 +34,15 @@ body.princess {
     width: 48px;
     height: 48px;
     margin: 15px;
+    transition: transform 2s ease-in-out;
+}
+
+.nav-menu-animal:hover {
+    transform: rotate(90deg);
+}
+
+.nav-menu-engine:hover {
+    transform: translate(20px, 0px);
 }
 
 .card-list:hover {
