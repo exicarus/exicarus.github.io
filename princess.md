@@ -10,11 +10,8 @@ layout: princess
                     <div class="col-sm-4"> 
                         <a data-toggle="modal" data-target="#cardModal" data-title="{{ post.title }}" data-image="{{ post.image }}"
                         data-french="{{ post.french }}" data-english="{{ post.english }}" data-vietnamese="{{ post.vietnamese }}" alt="{{ post.title }}">
-                            <div class="card card-list">
-                                <img class="card-img-top" src="{{ post.image }}" alt="{{ post.title }}" />
-                                <div class="card-body text-center">
-                                    <div class="card-title">{{ post.french }}</div>
-                                </div>
+                            <div class="card-list">
+                                <img class="card-img-top rounded-img" src="{{ post.image }}" alt="{{ post.title }}" />
                             </div>
                         </a>
                     </div>
