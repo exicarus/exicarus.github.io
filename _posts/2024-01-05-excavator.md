@@ -8,4 +8,4 @@ vietnamese: "máy xúc"
 category: "engine"
 ---
 
-![backhoe loader](/assets/engines/excavator.jpg)
+![excavator](/assets/engines/excavator.jpg)
